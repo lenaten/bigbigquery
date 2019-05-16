@@ -25,7 +25,7 @@ func TestQuery(t *testing.T) {
 	it, err := q.Read(ctx)
 	assert.Nil(t, err)
 	
-	var i interface{}
+	var i map[string]interface{}
 	
 	err = it.Next(&i)
 	assert.Nil(t, err)
